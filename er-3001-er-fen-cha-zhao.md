@@ -53,7 +53,6 @@ function binarySearch($searchNumber,$arr) {
 
 
 echo binarySearch($searchNumber,$arr);
-
 ```
 
 
