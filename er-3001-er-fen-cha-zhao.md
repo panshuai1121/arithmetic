@@ -20,5 +20,41 @@ $$\log_2 n$$ 相当于多少个2乘级等于n
 
 ### PHP代码实现
 
+```
+<?php
+
+$arr = [1,3,5,8,9,100,105,107,109,158,201,202,203,204,230,241,300];
+$searchNumber = 201;
+
+function binarySearch($searchNumber,$arr) {
+    #最低位置
+    $low = 0;
+    #最高位置
+    $high = count($arr);
+    #中间位置
+    while ($low <= $high) {
+
+      $middle = floor(($low + $high) / 2);
+      #取中间值
+      $guess = $arr[$middle];
+      #判断如果中间值 等于猜的数，直接返回该位置
+      if($guess ==  $searchNumber) {
+          return $middle;
+      #判断如果中间位置的数值小于要查找的数值
+      } elseif ($guess > $searchNumber) {
+          $high = $middle - 1;
+      } else {
+          $low = $middle + 1;
+      }
+
+    }
+
+}
+
+
+echo binarySearch($searchNumber,$arr);
+
+```
+
 
 
