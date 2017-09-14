@@ -8,8 +8,6 @@
 
 递归条件（recursive case）：函数调用自己
 
-
-
 ```
 #写一个倒计时 3....2...1
 
@@ -23,6 +21,19 @@ function countDown($i) {
 
 }
 countDown(3);
+```
+
+```
+$arr = [1,5,4];
+
+function arrSum(&$arr) {
+    if (count($arr) == 0) {
+       return ;
+    }
+    $x = array_pop($arr);
+    return $x + arrSum($arr);
+}
+echo arrSum($arr);
 ```
 
 
