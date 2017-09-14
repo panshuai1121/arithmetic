@@ -9,5 +9,5 @@
 * [六、递归](liu-3001-di-gui.md)
   * [一、栈](liu-3001-di-gui/yi-3001-zhan.md)
 * [七、快速排序](qi-3001-kuai-su-pai-xu.md)
-* 八、冒泡排序
+* [八、冒泡排序](ba-3001-mao-pao-pai-xu.md)
 
