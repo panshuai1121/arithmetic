@@ -6,5 +6,5 @@
 * [三、关于大O](san-3001-guan-yu-da-o.md)
 * [四、数组与链表](si-3001-shu-zu-yu-lian-biao.md)
 * [五、选择排序](wu-3001-xuan-ze-pai-xu.md)
-* 六、递归
+* [六、递归](liu-3001-di-gui.md)
 
