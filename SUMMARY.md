@@ -7,4 +7,5 @@
 * [四、数组与链表](si-3001-shu-zu-yu-lian-biao.md)
 * [五、选择排序](wu-3001-xuan-ze-pai-xu.md)
 * [六、递归](liu-3001-di-gui.md)
+  * [一、栈](liu-3001-di-gui/yi-3001-zhan.md)
 
