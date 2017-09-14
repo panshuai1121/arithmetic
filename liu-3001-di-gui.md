@@ -10,5 +10,20 @@
 
 
 
+```
+#写一个倒计时 3....2...1
+
+function countDown($i) {
+    if ($i <= 0) { //基线条件
+        return;
+    } else {        //递归条件
+      print $i;
+      countDown($i - 1);
+    }
+
+}
+countDown(3);
+```
+
 
 
