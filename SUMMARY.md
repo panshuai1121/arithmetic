@@ -8,4 +8,5 @@
 * [五、选择排序](wu-3001-xuan-ze-pai-xu.md)
 * [六、递归](liu-3001-di-gui.md)
   * [一、栈](liu-3001-di-gui/yi-3001-zhan.md)
+* [七、快速排序](qi-3001-kuai-su-pai-xu.md)
 
