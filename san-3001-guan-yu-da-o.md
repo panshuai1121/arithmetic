@@ -20,7 +20,9 @@ O\(log n\)
 
 O\(n\)
 
-0\(n \* log n\)
+O\(n \* log n\)
+
+O\(n^2\)
 
 
 
