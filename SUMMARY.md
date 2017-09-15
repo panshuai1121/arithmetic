@@ -12,4 +12,5 @@
 * [七、快速排序](qi-3001-kuai-su-pai-xu.md)
 * [八、冒泡排序](ba-3001-mao-pao-pai-xu.md)
 * [九、合并排序](jiu-3001-he-bing-pai-xu.md)
+* [十、散列表](shi-3001-san-lie-biao.md)
 
