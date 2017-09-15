@@ -18,5 +18,36 @@ divide and conquer，D&C  **一种著名得递归式问题解决办法**。
 
 4、小数组 + 基准值 + 大数组
 
-5、
+
+
+```
+<?php
+
+$arr = [40,9,71,61,53,57,59,94,13,15];
+
+function quickSort($arr) {
+  if (count($arr) < 2) {
+      return $arr;
+  }
+  //基准值
+  $standard = $arr[0];
+  $sort_left = [];
+  $sort_right = [];
+  for ($i = 1 ; $i < count($arr); $i++) {
+      if ($arr[0] > $arr[$i]) {
+          $sort_left[] = $arr[$i];
+      } else {
+          $sort_right[] = $arr[$i];
+      }
+  }
+  $sortLeft = quickSort($sort_left);
+  $sortRight = quickSort($sort_right);
+  return array_merge($sortLeft,[$standard],$sortRight);
+
+}
+
+print_r(quickSort($arr));
+```
+
+
 
