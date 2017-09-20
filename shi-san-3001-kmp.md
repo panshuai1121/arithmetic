@@ -30,3 +30,11 @@ Knuth-Morris-Pratt算法 简称 KMP算法，是最常用的算法之一，它以
 
 ![](http://image.beekka.com/blog/201305/bg2013050108.png)
 
+7、一个基本事实是，当空格与D不匹配时，你其实知道前面六个字符是"ABCDAB"。KMP算法的想法是，设法利用这个已知信息，不要把"搜索位置"移回已经比较过的位置，继续把它向后移，这样就提高了效率
+
+![](http://image.beekka.com/blog/201305/bg2013050107.png)
+
+8、怎么做到这一点呢？可以针对搜索词，算出一张《部分匹配表》（Partial Match Table）。这张表是如何产生的，后面再介绍，这里只要会用就可以了
+
+![](http://image.beekka.com/blog/201305/bg2013050109.png)
+
