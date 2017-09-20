@@ -1,8 +1,6 @@
 # 字符串匹配的KMP算法 {#page-title}
 
-Knuth-Morris-Pratt算法 简称 KMP算法，是最常用的算法之一，它以三个发明者命名，起头的那个K就是著名科学家Donald Knuth
-
-内容转载：[阮一峰](http://www.ruanyifeng.com/)
+Knuth-Morris-Pratt算法 简称 KMP算法，是最常用的算法之一，这个算法由Donald Knuth、Vaughan Pratt、James H. Morris三人于1977年联合发表，故取这3人的姓氏命名此算法.
 
 举例来说，有一个字符串"BBC ABCDAB ABCDABCDABDE"，我想知道，里面是否包含另一个字符串"ABCDABD"？
 
@@ -86,19 +84,17 @@ Knuth-Morris-Pratt算法 简称 KMP算法，是最常用的算法之一，它以
 
 > －　"A"的前缀和后缀都为空集，共有元素的长度为0；
 >
-> 　　－　"AB"的前缀为\[A\]，后缀为\[B\]，共有元素的长度为0；
+> －　"AB"的前缀为\[A\]，后缀为\[B\]，共有元素的长度为0；
 >
-> 　　－　"ABC"的前缀为\[A, AB\]，后缀为\[BC, C\]，共有元素的长度0；
+> －　"ABC"的前缀为\[A, AB\]，后缀为\[BC, C\]，共有元素的长度0；
 >
-> 　　－　"ABCD"的前缀为\[A, AB, ABC\]，后缀为\[BCD, CD, D\]，共有元素的长度为0；
+> －　"ABCD"的前缀为\[A, AB, ABC\]，后缀为\[BCD, CD, D\]，共有元素的长度为0；
 >
-> 　　－　"ABCDA"的前缀为\[A, AB, ABC, ABCD\]，后缀为\[BCDA, CDA, DA, A\]，共有元素为"A"，长度为1；
+> －　"ABCDA"的前缀为\[A, AB, ABC, ABCD\]，后缀为\[BCDA, CDA, DA, A\]，共有元素为"A"，长度为1；
 >
-> 　　－　"ABCDAB"的前缀为\[A, AB, ABC, ABCD, ABCDA\]，后缀为\[BCDAB, CDAB, DAB, AB, B\]，共有元素为"AB"，长度为2；
+> －　"ABCDAB"的前缀为\[A, AB, ABC, ABCD, ABCDA\]，后缀为\[BCDAB, CDAB, DAB, AB, B\]，共有元素为"AB"，长度为2；
 >
-> 　　－　"ABCDABD"的前缀为\[A, AB, ABC, ABCD, ABCDA, ABCDAB\]，后缀为\[BCDABD, CDABD, DABD, ABD, BD, D\]，共有元素的长度为0。
-
-
+> －　"ABCDABD"的前缀为\[A, AB, ABC, ABCD, ABCDA, ABCDAB\]，后缀为\[BCDABD, CDABD, DABD, ABD, BD, D\]，共有元素的长度为0。
 
 ![](http://image.beekka.com/blog/201305/bg2013050112.png)
 
