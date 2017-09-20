@@ -17,4 +17,5 @@
   * [一、图](shi-yi-3001-guang-du-you-xian-sou-suo/yi-3001-tu.md)
 * [十二、队列](er-3001-dui-lie.md)
 * [十三、KMP](shi-san-3001-kmp.md)
+  * [一、暴力破解算法](shi-san-3001-kmp/yi-3001-bao-li-po-jie-suan-fa.md)
 
