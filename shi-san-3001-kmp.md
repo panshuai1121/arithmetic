@@ -22,3 +22,7 @@ Knuth-Morris-Pratt算法 简称 KMP算法，是最常用的算法之一，它以
 
 ![](http://image.beekka.com/blog/201305/bg2013050106.png)
 
+5、直到字符串有一个字符，与搜索词对应的字符不相同为止。
+
+![](http://image.beekka.com/blog/201305/bg2013050107.png)
+
